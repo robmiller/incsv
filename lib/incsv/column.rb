@@ -3,11 +3,11 @@ require "bigdecimal"
 module InCSV
   class Column
     class ColumnType
-      def self.type
+      def self.name
         self.to_s.sub(/.*::/, "").downcase.to_sym
       end
 
-      def self.db_type
+      def self.for_database
         self.to_s.sub(/.*::/, "").downcase.to_sym
       end
 
@@ -37,7 +37,7 @@ module InCSV
       class Currency < ColumnType
         MATCH_EXPRESSION = /\A(\$|£)([0-9,\.]+)\z/
 
-        def self.db_type
+        def self.for_database
           "DECIMAL(10,2)"
         end
 
