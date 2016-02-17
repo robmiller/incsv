@@ -70,7 +70,7 @@ module InCSV
       Types.constants.select do |column_type|
         column_type = Types.const_get(column_type)
         if values.all? { |value| value.nil? || column_type.new(value).match? }
-          return column_type.type
+          return column_type
         end
       end
     end

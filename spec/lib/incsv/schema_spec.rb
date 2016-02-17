@@ -15,9 +15,9 @@ module InCSV
       it "returns the columns in the CSV" do
         schema = Schema.new(PRODUCTS)
         expect(schema.columns).not_to be_empty
-        expect(schema.columns[0].type).to eq(:string)
-        expect(schema.columns[1].type).to eq(:date)
-        expect(schema.columns[2].type).to eq(:currency)
+        expect(schema.columns[0].type.type).to eq(:string)
+        expect(schema.columns[1].type.type).to eq(:date)
+        expect(schema.columns[2].type.type).to eq(:currency)
       end
     end
   end
