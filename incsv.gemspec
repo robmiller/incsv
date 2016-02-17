@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Rob Miller"]
   spec.email         = ["rob@bigfish.co.uk"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{A tool for interrogating CSV data using SQLite and Sequel.}
+  spec.description   = %q{Loads a CSV file into an SQLite database automatically, dropping you into a Ruby shell that allows you to explore the data within.}
+  spec.homepage      = "https://github.com/robmiller/incsv"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
