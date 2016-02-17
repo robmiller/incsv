@@ -16,7 +16,7 @@ module InCSV
 
     def parsed_columns
       samples(50).map do |name, values|
-        Column.new(values)
+        Column.new(name, values)
       end
     end
 

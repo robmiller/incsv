@@ -59,9 +59,12 @@ module InCSV
       end
     end
 
-    def initialize(values)
+    def initialize(name, values)
+      @name = name
       @values = values
     end
+
+    attr_reader :name
 
     def type
       Types.constants.select do |column_type|
