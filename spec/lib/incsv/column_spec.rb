@@ -58,6 +58,22 @@ module InCSV
         expect(column.type).to eq(:currency)
       end
 
+      it "interprets mixed columns as strings" do
+        column = Column.new(["£3.90", "2015-01-01"])
+        expect(column.type).to eq(:string)
+      end
+
+      it "interprets columns with null values correctly" do
+        column = Column.new(["2016-04-08", nil, "2015-01-01"])
+        expect(column.type).to eq(:date)
+
+        column = Column.new([nil, "$4.09", nil, "£4,984,401.01"])
+        expect(column.type).to eq(:currency)
+
+        column = Column.new(["foo", nil, "baz", nil])
+        expect(column.type).to eq(:string)
+      end
+
       it "interprets unknown formats as strings" do
         column = Column.new(["foo", "bar"])
         expect(column.type).to eq(:string)

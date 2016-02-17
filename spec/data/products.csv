@@ -1,3 +1,5 @@
 name,date_added,price
 Hammer,2016-01-01,$4.99
 Screwdriver,1999-04-22,£2.99
+Nails,,£0.99
+Screws,,
