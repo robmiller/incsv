@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe Incsv do
+describe InCSV do
   it 'has a version number' do
-    expect(Incsv::VERSION).not_to be nil
+    expect(InCSV::VERSION).not_to be nil
   end
 
   it 'does something useful' do

@@ -5,7 +5,7 @@ require 'incsv/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "incsv"
-  spec.version       = Incsv::VERSION
+  spec.version       = InCSV::VERSION
   spec.authors       = ["Rob Miller"]
   spec.email         = ["rob@bigfish.co.uk"]
 

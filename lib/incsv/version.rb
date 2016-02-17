@@ -1,3 +1,3 @@
-module Incsv
+module InCSV
   VERSION = "0.1.0"
 end

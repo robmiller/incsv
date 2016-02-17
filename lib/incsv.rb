@@ -1,5 +1,5 @@
 require "incsv/version"
 
-module Incsv
+module InCSV
   # Your code goes here...
 end
