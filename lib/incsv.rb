@@ -1,5 +1,4 @@
 require "incsv/version"
 
-module InCSV
-  # Your code goes here...
-end
+require "incsv/schema"
+require "incsv/column"
