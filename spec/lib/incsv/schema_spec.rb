@@ -2,8 +2,6 @@ require_relative "../../spec_helper"
 
 module InCSV
   describe Schema do
-    PRODUCTS = Pathname(__dir__) + ".." + ".." + "data" + "products.csv"
-
     describe "initialize" do
       it "accepts a CSV file" do
         schema = Schema.new(PRODUCTS)
