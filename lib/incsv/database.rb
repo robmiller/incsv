@@ -74,7 +74,13 @@ module InCSV
     end
 
     def chunks(size = 200, &block)
-      CSV.foreach(csv, headers: true).each_slice(size, &block)
+      data =
+        File.read(csv)
+          .encode("UTF-8", invalid: :replace, undef: :replace, replace: "")
+
+      csv = CSV.new(data, headers: true)
+      csv.each_slice(size, &block)
+      csv.close
     end
   end
 end

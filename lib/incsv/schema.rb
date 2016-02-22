@@ -35,7 +35,14 @@ module InCSV
     # This gives us enough data to be able to guess the type of
     # a column.
     def samples(num_rows)
-      sample_data = CSV.foreach(csv, headers: true).take(num_rows)
+      data =
+        File.read(csv)
+          .encode("UTF-8", invalid: :replace, undef: :replace, replace: "")
+
+      csv = CSV.new(data, headers: true)
+      sample_data = csv.each.take(num_rows)
+      csv.close
+
       sample_data.map(&:to_a).flatten(1).each_with_object({}) do |row, data|
         column = row[0]
         value  = row[1]
