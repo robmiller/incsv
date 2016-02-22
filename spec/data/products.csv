@@ -1,5 +1,516 @@
 name,date_added,price
-Hammer,2016-01-01,$4.99
-Screwdriver,1999-04-22,£2.99
-Nails,,£0.99
-Screws,,
+"Acid",2013-03-24,£38
+"Abraxo cleaner",2016-09-25,£21
+"Abraxo cleaner industrial grade",2014-12-03,£52
+"Anti freeze bottle",2013-07-16,£45
+"Bag of fertilizer",2016-08-14,£9
+"Bloodbug proboscis",2015-04-25,£70
+"Bloatfly gland",2014-05-20,£42
+"Coolant",2013-02-26,£86
+"Ichor sac",2013-03-22,£71
+"Makeshift battery",2013-10-17,£46
+"Suprathaw antifreeze",2014-08-12,£95
+"Undamaged Abraxo cleaner",2015-09-11,£40
+"Adhesive",2015-06-26,£56
+"Duct tape",2013-10-25,£91
+"Economy wonderglue",2016-08-03,£1
+"Military grade duct tape",2013-02-27,£28
+"Pack of duct tape",2014-01-14,£39
+"Sealed wonderglue",2015-03-06,£95
+"Vegetable starch",2016-11-17,£79
+"Wonderglue",2016-08-23,£3
+"Aluminum",2016-09-17,£94
+"Alarm clock",2013-05-21,£88
+"Aluminum can",2016-08-21,£61
+"Aluminum canister",2013-07-03,£24
+"Applicator",2013-03-17,£75
+"Cake pan",2015-01-12,£61
+"Carlisle typewriter",2016-02-27,£28
+"Cauterizer",2015-09-10,£65
+"Coffee tin",2015-10-11,£49
+"Coolant cap",2015-08-27,£74
+"Distress pulser",2015-12-12,£79
+"Hubcap",2016-03-12,£70
+"Inactive distress pulser",2016-10-19,£32
+"Industrial oil canister",2013-11-03,£35
+"Sensor",2014-06-16,£1
+"spanner",2013-01-02,£53
+"Surgical tray",2014-06-05,£9
+"Sweeper",2015-10-17,£61
+"Toy rocketship",2014-01-03,£6
+"Tray",2013-06-25,£17
+"Tri tool",2016-08-28,£17
+"TV dinner tray",2014-11-23,£90
+"Tweezers",2014-09-07,£6
+"Wakemaster alarm clock",2016-02-04,£77
+"Antiseptic",2013-05-18,£20
+"Abraxo cleaner",2016-04-26,£4
+"Abraxo cleaner industrial grade",2014-10-18,£79
+"Blood sac",2013-05-05,£78
+"Empty blood sac",2014-07-10,£53
+"Industrial solvent",2014-03-02,£25
+"Toothpaste",2015-01-12,£90
+"Turpentine",2013-08-08,£43
+"Undamaged Abraxo cleaner",2015-04-04,£78
+"Asbestos",2014-05-15,£11
+"Biometric scanner",2016-08-07,£41
+"Chalk",2014-01-26,£78
+"Cigarette carton",2014-05-09,£28
+"Coffee pot",2015-10-09,£82
+"Extinguisher",2013-01-06,£42
+"Luxobrew coffee pot",2016-12-27,£59
+"Oven mitt",2016-03-13,£91
+"Pack of cigarettes",2016-02-03,£83
+"Rat poison",2014-06-17,£13
+"Teapot",2015-01-02,£66
+"Ballistic fiber",2016-11-28,£97
+"Military ammo bag",2015-01-02,£80
+"Military grade duct tape",2015-12-08,£91
+"Bone",2014-10-12,£71
+"brahmin skull",2013-07-12,£31
+"capless skull",2014-08-09,£65
+"Deathclaw hand",2015-03-06,£96
+"femur",2014-12-21,£91
+"human jaw",2013-05-28,£56
+"jawless brahmin skull",2014-08-13,£61
+"left arm bones",2016-05-17,£79
+"left foot bones",2013-02-27,£8
+"left hand bones",2015-04-06,£93
+"left leg bones",2016-11-24,£39
+"mole rat teeth",2016-11-27,£98
+"pelvis bones",2015-10-12,£18
+"rib cage and pelvis",2013-06-08,£3
+"rib cage and spine",2014-11-08,£1
+"right arm bones",2015-02-16,£43
+"right hand bones",2016-05-23,£28
+"right leg bones",2015-07-14,£51
+"skull cap bone",2015-03-20,£4
+"skull faceplate",2015-08-19,£31
+"skull fragment",2016-09-02,£50
+"skull",2015-02-13,£36
+"tibia",2013-04-14,£19
+"upper skull",2013-04-13,£97
+"Ceramic",2016-10-24,£15
+"ashtray",2014-11-24,£9
+"bowl",2016-12-09,£85
+"ceramic bowl",2013-03-24,£19
+"clean red plate",2014-08-14,£52
+"clean white plate",2015-03-03,£77
+"Coffee cup",2014-05-26,£37
+"cracked bowl",2016-04-28,£84
+"cracked deathclaw egg",2013-03-11,£68
+"dirty ashtray",2015-11-06,£61
+"empty floral barrel vase",2013-05-21,£97
+"empty floral flared vase",2015-07-10,£97
+"empty teal bud vase",2013-10-15,£32
+"empty teal flared vase",2016-07-04,£35
+"empty teal rounded vase",2015-10-23,£98
+"empty teal vaulted vase",2014-02-22,£53
+"empty willow flared vase",2015-03-28,£40
+"empty willow rounded vase",2014-11-02,£14
+"empty willow vaulted vase",2015-02-18,£7
+"floral rounded vase",2015-06-08,£72
+"high-powered magnet",2015-03-08,£40
+"red plate",2013-12-28,£66
+"teal barrel vase",2014-01-06,£72
+"teapot",2013-04-23,£15
+"umbrella stand",2015-05-19,£7
+"vase",2016-06-27,£6
+"willow barrel vase",2015-12-24,£97
+"yellow plate",2015-11-26,£78
+"yellow-trimmed plate",2016-06-15,£47
+"Circuitry",2016-06-19,£42
+"Assaultron circuit board",2016-06-25,£67
+"distress pulser",2013-03-11,£50
+"enhanced targeting card",2014-08-23,£25
+"hot plate",2015-02-20,£38
+"inactive distress pulser",2016-12-28,£73
+"military-grade circuit board",2016-11-26,£77
+"telephone",2015-07-05,£11
+"toaster",2015-12-07,£81
+"Cloth",2016-11-04,£82
+"baseball base",2015-07-04,£50
+"Boston Bugle",2015-10-13,£14
+"cigar box",2016-05-01,£31
+"cigar",2016-09-16,£13
+"cigarette",2013-02-11,£73
+"cigarette carton",2014-09-10,£39
+"comfy pillow",2016-07-26,£41
+"cotton yarn",2013-01-08,£94
+"dishrag",2014-09-16,£70
+"Duct tape",2013-10-06,£52
+"feather duster",2016-09-28,£83
+"Jangles the Moon Monkey",2015-10-16,£89
+"late edition newspaper",2015-02-01,£95
+"lit cigarette",2015-04-07,£84
+"mop",2014-03-22,£48
+"oven mitt",2015-01-21,£84
+"pack of cigarettes",2016-11-07,£56
+"pack of duct tape",2015-01-09,£42
+"paintbrush",2013-10-23,£45
+"pre-War money",2014-09-09,£98
+"rolled Boston Bugle",2014-11-15,£39
+"straw pillow",2016-06-22,£93
+"teddy bear",2013-08-19,£60
+"trifold American flag",2014-08-14,£74
+"Concrete",2013-01-09,£82
+"Bag of cement",2013-12-17,£93
+"Cinder block",2013-01-27,£53
+"Shipment of concrete",2014-10-04,£1
+"Copper",2016-02-26,£71
+"beaker stand",2015-02-26,£87
+"blue table lamp",2016-01-26,£32
+"broken lamp",2016-02-23,£19
+"broken light bulb",2016-05-09,£57
+"bunsen burner",2015-07-15,£34
+"cooking pot",2013-09-21,£90
+"copper bar",2016-10-20,£2
+"fuse",2013-06-05,£64
+"high-powered magnet",2015-08-26,£18
+"hot plate",2014-12-25,£70
+"light bulb",2014-07-03,£87
+"magnifying glass",2016-02-14,£42
+"power relay coil",2014-02-02,£52
+"Shadeless lamp",2015-07-12,£91
+"shadeless table lamp",2014-04-07,£41
+"telephone",2015-01-04,£36
+"vacuum tube",2013-08-08,£13
+"yellow table lamp",2013-10-06,£63
+"Cork",2014-07-14,£40
+"antique globe",2016-07-13,£44
+"Baseball",2016-04-11,£69
+"crystal liquor decanter",2016-08-20,£96
+"Crystal",2013-09-04,£70
+"camera",2016-07-17,£93
+"crystal liquor decanter",2014-04-13,£52
+"laser trip wire",2013-03-24,£95
+"magnifying glass",2014-11-18,£68
+"microscope",2014-10-03,£3
+"ProSnap camera",2016-09-23,£91
+"Fertilizer",2015-06-06,£75
+"Bag of fertilizer",2016-07-06,£30
+"Fiber optics",2014-01-07,£61
+"Biometric scanner",2016-04-10,£86
+"microscope",2013-02-13,£60
+"Fiberglass",2016-08-02,£75
+"abraxo cleaner",2016-08-25,£89
+"abraxo cleaner industrial grade",2014-08-10,£8
+"aluminum canister",2015-03-17,£71
+"Blood sac",2015-05-21,£25
+"cigar box",2016-08-03,£88
+"Jangles the Moon Monkey",2016-11-26,£63
+"rat poison",2014-04-16,£41
+"Swan boat fragments",2014-12-22,£79
+"telephone",2015-03-19,£19
+"Gears",2015-06-20,£21
+"Adjustable wrench",2016-02-22,£40
+"camera",2015-02-14,£62
+"Desk fan",2016-03-14,£63
+"fishing rod",2016-10-22,£58
+"Giddyup Buttercup",2013-09-27,£84
+"Giddyup Buttercup front leg",2016-05-28,£68
+"gold watch",2016-09-28,£85
+"microscope",2014-11-10,£32
+"office desk fan",2015-10-09,£78
+"silver pocket watch",2013-09-17,£29
+"typewriter",2013-03-12,£78
+"Glass",2016-03-27,£12
+"Alarm clock",2014-01-15,£43
+"baby bottle",2014-02-26,£16
+"beer bottle",2014-11-20,£4
+"blue table lamp",2015-12-26,£63
+"broken lamp",2015-11-03,£77
+"brown bottle",2014-08-13,£83
+"burgundy bottle",2016-07-28,£55
+"chemistry jar",2013-09-03,£73
+"cracked glass bowl",2013-08-01,£11
+"desk lamp",2015-08-28,£55
+"drinking glass",2016-11-02,£18
+"empty milk bottle",2014-06-16,£57
+"flask",2015-02-22,£43
+"fuse",2015-10-01,£9
+"glass pitcher",2014-05-13,£97
+"graduated cylinder",2014-11-02,£8
+"Gwinnett ale bottle",2016-10-12,£78
+"Gwinnett brew bottle",2016-12-13,£96
+"Gwinnett lager bottle",2013-08-28,£85
+"Gwinnett pale ale bottle",2016-04-27,£85
+"Gwinnett pilsner bottle",2014-02-13,£7
+"Gwinnett stout bottle",2015-01-27,£92
+"lab bottle",2013-07-10,£21
+"lantern",2013-04-25,£50
+"large baby bottle",2016-09-12,£29
+"large beaker",2016-11-10,£50
+"light bulb",2016-07-18,£82
+"liquor bottle",2014-02-07,£3
+"magnifying glass",2013-02-04,£15
+"microscope",2015-02-26,£52
+"Nuka Cola bottle",2015-04-01,£93
+"pint glass",2016-05-06,£89
+"research test tube",2015-12-05,£16
+"rum bottle",2014-07-11,£14
+"shadeless lamp",2013-05-14,£91
+"shadeless table lamp",2015-08-04,£14
+"shot glass",2013-06-23,£26
+"small baby bottle",2016-10-18,£49
+"thin beaker",2015-01-05,£13
+"vacuum tube",2014-09-09,£14
+"Wakemaster alarm clock",2015-09-15,£22
+"white bottle",2016-08-15,£84
+"yellow table lamp",2015-09-23,£51
+"Gold",2013-04-19,£2
+"gold bar",2016-01-13,£84
+"Gold plated flip lighter",2014-08-20,£78
+"Gold watch",2013-05-05,£34
+"Lead",2014-05-24,£6
+"5lb weight",2016-11-02,£38
+"10lb weight",2014-12-21,£90
+"25lb weight",2015-08-01,£18
+"40lb barbell",2016-07-28,£47
+"80lb barbell",2013-06-03,£95
+"80lb curlbar",2015-04-25,£43
+"160lb dumbbell",2013-04-05,£30
+"Makeshift battery",2013-05-01,£99
+"pencil",2014-07-14,£2
+"Leather",2015-09-19,£85
+"Baseball",2016-02-26,£12
+"baseball glove",2015-04-09,£59
+"Brahmin hide",2015-01-23,£32
+"deathclaw hand",2014-03-12,£22
+"deathclaw hide",2013-05-22,£86
+"mole rat hide",2013-12-25,£95
+"radstag hide",2015-08-25,£76
+"teddy bear",2016-05-03,£59
+"Yao guai hide",2013-10-20,£44
+"Nuclear material",2013-10-19,£89
+"Alarm clock",2013-04-08,£8
+"Biometric scanner",2014-06-14,£23
+"Blast Radius board game",2016-09-20,£71
+"distress pulser",2014-08-20,£77
+"high-powered magnet",2015-03-15,£66
+"inactive distress pulser",2014-11-03,£24
+"Wakemaster alarm clock",2015-04-09,£45
+"Oil",2013-06-26,£44
+"aluminum canister",2015-09-05,£57
+"blowtorch",2015-12-04,£7
+"blue paint",2016-04-03,£38
+"cooking oil",2015-08-20,£91
+"cutting fluid",2013-12-25,£97
+"flip lighter",2013-03-16,£42
+"gas canister",2016-04-22,£18
+"Gold plated flip lighter",2013-01-22,£48
+"industrial oil canister",2015-05-05,£24
+"industrial size shortening",2013-08-01,£32
+"lantern",2013-03-07,£88
+"Mr. Handy fuel",2016-09-07,£92
+"Paint can",2014-02-19,£20
+"soap",2014-10-05,£3
+"unused flip lighter",2016-08-27,£79
+"used oil can",2015-07-15,£4
+"yellow paint",2016-02-24,£50
+"Plastic",2016-02-07,£68
+"anti freeze bottle",2014-11-11,£19
+"antique globe",2014-07-02,£81
+"baby rattle",2015-10-09,£44
+"baseball base",2016-02-11,£3
+"bowling ball",2016-06-18,£98
+"bowling pin",2015-09-12,£35
+"bread box",2014-04-12,£85
+"broom",2014-07-17,£70
+"cafeteria tray",2015-02-22,£44
+"cigarette carton",2013-06-01,£96
+"clean broom",2014-04-03,£29
+"clothing iron",2013-04-05,£99
+"Coffee pot",2014-02-06,£91
+"cooking oil",2016-03-19,£37
+"coolant",2016-02-20,£51
+"cue ball",2015-07-24,£46
+"dog bowl",2014-09-02,£74
+"eight ball",2015-12-07,£12
+"eleven ball",2016-07-17,£16
+"empty coolant",2014-06-27,£23
+"enhanced targeting card",2015-01-10,£74
+"Fancy hairbrush",2016-03-26,£3
+"feather duster",2015-11-25,£47
+"fifteen ball",2016-08-13,£35
+"fourteen ball",2016-11-26,£11
+"hairbrush",2013-12-15,£71
+"Jangles the Moon Monkey",2015-03-28,£86
+"league bowling pin",2016-05-05,£13
+"life preserver",2014-03-27,£3
+"Luxobrew coffee pot",2016-11-12,£84
+"pack of cigarettes",2013-11-04,£85
+"pen",2015-10-17,£77
+"pepper mill",2016-03-05,£64
+"plastic bowl",2014-11-03,£11
+"plastic knife",2014-06-06,£12
+"plastic plate",2013-08-25,£83
+"plastic pumpkin",2015-01-20,£8
+"plastic spoon",2015-02-09,£97
+"salt shaker",2014-01-09,£58
+"scissors",2015-06-09,£61
+"shopping basket",2016-06-09,£10
+"six ball",2015-03-17,£68
+"Suprathaw antifreeze",2013-02-20,£37
+"synth component",2013-04-24,£17
+"ten ball",2013-10-17,£39
+"toothbrush",2014-08-19,£98
+"toothpaste",2015-05-04,£27
+"toy alien",2014-11-03,£99
+"toy rocketship",2014-03-26,£63
+"twelve ball",2013-12-06,£42
+"two ball",2013-11-25,£23
+"umbrella",2015-12-14,£3
+"Rubber",2015-12-11,£59
+"Basketball",2014-04-26,£92
+"bonesaw",2016-06-01,£74
+"extinguisher",2016-01-19,£51
+"kickball",2013-10-24,£70
+"large baby bottle",2013-06-28,£29
+"plunger",2013-08-05,£92
+"small baby bottle",2016-12-03,£23
+"spatula",2014-10-26,£81
+"toy alien",2013-09-07,£77
+"unfilled kickball",2015-08-09,£34
+"Screws",2016-06-01,£54
+"antique globe",2016-03-11,£46
+"desk fan",2014-05-17,£89
+"Giddyup Buttercup",2014-03-11,£22
+"Globe",2015-09-07,£28
+"handcuffs",2013-09-22,£1
+"hot plate",2015-06-04,£49
+"Hubcap",2016-09-25,£91
+"office desk fan",2014-04-13,£53
+"pepper mill",2013-09-14,£78
+"tongs",2013-02-14,£57
+"toy car",2013-01-17,£13
+"toy truck",2014-06-16,£44
+"typewriter",2014-02-22,£10
+"Silver",2013-06-09,£43
+"Assaultron circuit board",2013-02-16,£89
+"enhanced targeting card",2013-04-12,£99
+"Fancy hairbrush",2013-11-24,£33
+"silver bar",2016-10-26,£67
+"silver fork",2016-12-22,£33
+"silver locket",2016-11-17,£86
+"silver pocket watch",2016-12-20,£16
+"Silver table knife",2015-11-02,£1
+"silver table spoon",2013-05-12,£20
+"Spring",2016-05-20,£81
+"alarm clock",2016-11-07,£94
+"battered clipboard",2014-06-04,£70
+"camera",2015-11-16,£93
+"fishing rod",2013-09-02,£64
+"flip lighter",2014-01-14,£29
+"Giddyup Buttercup",2014-10-23,£99
+"Giddyup Buttercup front leg",2013-08-16,£59
+"handcuffs",2014-10-15,£93
+"kitchen scale",2013-11-10,£21
+"life preserver",2013-10-16,£69
+"silver pocket watch",2013-12-18,£87
+"typewriter",2014-02-18,£64
+"umbrella",2016-06-15,£70
+"Unused flip lighter",2014-11-07,£9
+"Wakemaster alarm clock",2013-01-01,£96
+"Steel",2014-07-03,£19
+"Adjustable wrench",2015-10-11,£81
+"antique table knife",2014-06-25,£6
+"ball-peen hammer",2014-01-09,£42
+"bandage scissors",2014-07-16,£80
+"blowtorch",2013-08-24,£29
+"blue paint",2015-10-25,£62
+"bonesaw",2015-03-22,£25
+"Brotherhood of Steel holotag",2016-03-06,£52
+"bunsen burner",2016-12-27,£76
+"can",2013-02-27,£93
+"clothes hanger",2016-04-25,£52
+"clothing iron",2015-04-21,£48
+"Coffee pot",2013-07-09,£80
+"collander",2014-05-28,£30
+"combination wrench",2014-10-20,£17
+"connecting rod",2014-04-24,£87
+"cooking pan",2015-04-19,£45
+"cooking pot",2016-03-20,£84
+"covered sauce pan",2013-01-23,£66
+"cutting fluid",2014-05-14,£76
+"desk fan",2013-06-14,£94
+"dinner fork",2013-02-06,£77
+"dinner plates",2016-10-15,£14
+"dog tags",2014-06-17,£90
+"empty paint can",2013-08-05,£35
+"enamel bucket",2015-06-12,£2
+"extinguisher",2014-12-08,£2
+"flip lighter",2013-05-11,£8
+"frying pan",2016-12-09,£61
+"gas canister",2013-03-24,£12
+"Giddyup Buttercup",2014-01-06,£37
+"Giddyup Buttercup front leg",2015-04-03,£90
+"Gold plated flip lighter",2015-04-06,£50
+"handcuffs",2016-10-12,£63
+"industrial solvent",2014-10-03,£13
+"kitchen scale",2013-06-26,£96
+"ladle",2015-12-25,£72
+"lantern",2015-03-26,£14
+"Luxobrew coffee pot",2015-03-14,£73
+"medical liquid nitrogen dispenser",2016-01-25,£92
+"metal bucket",2015-12-03,£3
+"Mr. Handy fuel",2014-01-05,£30
+"office desk fan",2013-07-28,£63
+"paint can",2013-08-14,£22
+"power relay coil",2013-09-14,£72
+"rat poison",2015-03-17,£81
+"sauce pan lid",2015-04-21,£1
+"sauce pan",2013-05-05,£10
+"scalpel",2013-05-09,£4
+"scissors",2013-03-05,£31
+"screwdriver",2015-07-19,£54
+"shopping basket",2013-03-02,£81
+"shovel",2013-05-22,£21
+"small covered sauce pan",2016-10-17,£44
+"small sauce pan",2014-08-16,£7
+"spatula",2015-09-08,£51
+"surgical scalpel",2015-01-17,£52
+"table knife",2016-03-02,£55
+"table spoon",2013-08-17,£36
+"tea kettle",2014-06-07,£12
+"tin can",2014-05-21,£94
+"toaster",2016-05-17,£21
+"tongs",2013-02-01,£22
+"torque rod end",2015-08-17,£19
+"toy truck",2016-12-28,£85
+"tube flange",2016-08-02,£26
+"untarnished metal bucket",2016-05-28,£72
+"Unused flip lighter",2013-05-21,£57
+"used oil can",2015-12-16,£95
+"wrench",2016-12-21,£28
+"yellow paint",2015-02-25,£64
+"Wood",2013-05-04,£39
+"ball-peen hammer",2014-05-20,£53
+"battered clipboard",2013-03-17,£43
+"bowling pin",2015-10-01,£80
+"Broom",2015-02-14,£93
+"chessboard",2013-04-26,£88
+"cigar box",2016-09-25,£89
+"clean broom",2016-04-18,£44
+"cutting board",2014-05-25,£55
+"desktop picture frame",2014-08-09,£26
+"fishing rod",2016-07-24,£17
+"league bowling pin",2013-09-23,£82
+"mop",2014-10-09,£51
+"paintbrush",2015-06-24,£37
+"pencil",2014-05-07,£88
+"plunger",2013-08-15,£89
+"rack",2015-07-08,£43
+"screwdriver",2013-04-25,£73
+"shovel",2014-06-06,£72
+"small picture frame",2015-03-08,£54
+"tabletop picture frame",2015-04-17,£79
+"test tube rack",2015-01-03,£28
+"toy car",2013-12-14,£95
+"trees",2014-04-16,£18
+"trifold American flag",2014-09-07,£56
+"wooden block - B & Y",2013-11-25,£5
+"wooden block - I & D",2014-01-02,£8
+"wooden block - N & S",2013-02-24,£63
+"wooden block - V & F",2014-10-18,£61
+"yardstick",2013-11-21,£4

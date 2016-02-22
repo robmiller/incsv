@@ -33,11 +33,11 @@ module InCSV
         database = Database.new(PRODUCTS)
         database.import
         expect(database.created?).to eq(true)
-        expect(database.db[:products].count).to eq(4)
+        expect(database.db[:products].count).to eq(515)
 
-        first_product = database.db[:products].where(name: "Hammer").first
-        expect(first_product[:date_added]).to eq(Date.new(2016, 1, 1))
-        expect(first_product[:price]).to eq(BigDecimal.new("4.99"))
+        first_product = database.db[:products].where(name: "Acid").first
+        expect(first_product[:date_added]).to eq(Date.new(2013, 3, 24))
+        expect(first_product[:price]).to eq(BigDecimal.new("38"))
       end
     end
 
