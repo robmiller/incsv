@@ -3,10 +3,21 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 
 require "thor"
+require "pry"
 
 require "incsv"
 
 module InCSV
+  class Console
+    def initialize(db)
+      @db = db
+    end
+
+    def get_binding
+      binding
+    end
+  end
+
   class CLI < Thor
     desc "create CSV_FILE", "Creates a database file with the appropriate schema for the given CSV file, but doesn't import any data."
     method_option :force, type: :boolean, default: false
@@ -42,6 +53,40 @@ module InCSV
       $stderr.puts "Import failed."
       $stderr.puts "#{e.message}"
       exit 50
+    end
+
+    desc "console CSV_FILE", "Opens a query console for the given CSV file, creating a database file and importing the data if necessary."
+    def console(csv_file)
+      database = Database.new(csv_file)
+
+      unless database.created? && database.imported?
+        database.create
+        database.import
+      end
+
+      console = Console.new(database.db)
+
+      puts "Found database at #{database.db_path}"
+      puts "Connection is in @db"
+      puts
+      puts "Primary table name is #{database.table_name}"
+      puts "Columns: #{database.db[database.table_name].columns.join(", ")}"
+
+      first_row = database.db[database.table_name].first
+      puts
+      puts "First row:"
+      puts first_row.keys.join(", ")
+      puts first_row.values.join(", ")
+
+      puts
+      puts "Not sure what to do next? Try this:"
+      puts "@db[:#{database.table_name}].count"
+
+      console.get_binding.pry(quiet: true, prompt: [proc { "> " }, proc { "* " }])
+    rescue StandardError => e
+      $stderr.puts "Failed to start console."
+      $stderr.puts "#{e.message}"
+      exit 60
     end
   end
 end

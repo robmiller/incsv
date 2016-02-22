@@ -28,6 +28,12 @@ module InCSV
       (path.dirname + (path.basename(".csv").to_s + ".db")).to_s
     end
 
+    def table_name
+      @table_name ||= begin
+        File.basename(csv, ".csv").downcase.gsub(/[^a-z_]/, "").to_sym
+      end
+    end
+
     def create
       @db.create_table!(table_name) do
         primary_key :_incsv_id
@@ -62,12 +68,6 @@ module InCSV
     private
 
     attr_reader :csv
-
-    def table_name
-      @table_name ||= begin
-        File.basename(csv, ".csv").downcase.gsub(/[^a-z_]/, "").to_sym
-      end
-    end
 
     def schema
       @schema ||= Schema.new(csv)
