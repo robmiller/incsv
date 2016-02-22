@@ -40,5 +40,30 @@ module InCSV
         expect(first_product[:price]).to eq(BigDecimal.new("4.99"))
       end
     end
+
+    describe "exists?" do
+      it "returns false if the database file doesn't exist" do
+        database = Database.new(PRODUCTS)
+
+        if File.exist?(database.db_path)
+          File.unlink(database.db_path)
+        end
+
+        expect(database.exists?).to eq(false)
+      end
+
+      it "returns true once the database has been created" do
+        database = Database.new(PRODUCTS)
+
+        if File.exist?(database.db_path)
+          File.unlink(database.db_path)
+        end
+
+        expect(database.exists?).to eq(false)
+
+        database.create
+        expect(database.exists?).to eq(true)
+      end
+    end
   end
 end

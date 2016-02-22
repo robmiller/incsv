@@ -15,6 +15,14 @@ module InCSV
 
     attr_reader :db
 
+    def created?
+      @created
+    end
+
+    def exists?
+      File.exist?(db_path)
+    end
+
     def db_path
       path = Pathname(csv)
       (path.dirname + (path.basename(".csv").to_s + ".db")).to_s
@@ -32,10 +40,6 @@ module InCSV
       end
 
       @created = true
-    end
-
-    def created?
-      @created
     end
 
     def import
