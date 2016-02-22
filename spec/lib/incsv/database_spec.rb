@@ -27,5 +27,17 @@ module InCSV
         expect(database.created?).to eq(true)
       end
     end
+
+    describe "import" do
+      it "imports the data" do
+        database = Database.new(PRODUCTS)
+        database.import
+        expect(database.created?).to eq(true)
+        expect(database.db[:products].count).to eq(4)
+
+        first_product = database.db[:products].where(name: "Hammer").first
+        expect(first_product[:date_added]).to eq(Date.new(2016, 1, 1))
+      end
+    end
   end
 end
