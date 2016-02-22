@@ -17,7 +17,11 @@ module InCSV
     end
 
     def clean_value
-      @value
+      self.class.clean_value(@value)
+    end
+
+    def self.clean_value(value)
+      value
     end
 
     private

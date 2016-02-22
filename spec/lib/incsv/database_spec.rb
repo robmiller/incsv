@@ -37,6 +37,7 @@ module InCSV
 
         first_product = database.db[:products].where(name: "Hammer").first
         expect(first_product[:date_added]).to eq(Date.new(2016, 1, 1))
+        expect(first_product[:price]).to eq(BigDecimal.new("4.99"))
       end
     end
   end

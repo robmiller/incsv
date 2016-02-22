@@ -11,7 +11,9 @@ module InCSV
         value.strip.match(MATCH_EXPRESSION)
       end
 
-      def clean_value
+      def self.clean_value(value)
+        return unless value
+
         value.strip.match(MATCH_EXPRESSION) do |match|
           BigDecimal(match[2].delete(","))
         end

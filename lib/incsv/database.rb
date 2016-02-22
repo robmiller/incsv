@@ -39,14 +39,17 @@ module InCSV
     def import
       create unless created?
 
-      columns = schema.columns.map(&:name)
+      columns      = schema.columns
+      column_names = columns.map(&:name)
 
       chunks(200) do |chunk|
         rows = chunk.map do |row|
-          row = row.to_hash.values
+          row.to_hash.values.each_with_index.map do |column, n|
+            columns[n].type.clean_value(column)
+          end
         end
 
-        @db[table_name].import(columns, rows)
+        @db[table_name].import(column_names, rows)
       end
     end
 
