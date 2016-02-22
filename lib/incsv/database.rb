@@ -6,7 +6,6 @@ module InCSV
   class Database
     def initialize(csv)
       @csv = csv
-      @created = false
 
       @db = Sequel.sqlite(db_path)
       # require "logger"
@@ -15,8 +14,12 @@ module InCSV
 
     attr_reader :db
 
-    def created?
-      @created
+    def table_created?
+      @db.table_exists?(table_name)
+    end
+
+    def imported?
+       table_created? && @db[table_name].count > 0
     end
 
     def exists?
@@ -34,7 +37,7 @@ module InCSV
       end
     end
 
-    def create
+    def create_table
       @db.create_table!(table_name) do
         primary_key :_incsv_id
       end
@@ -44,12 +47,12 @@ module InCSV
           add_column c.name, c.type.for_database
         end
       end
-
-      @created = true
     end
 
     def import
-      create unless created?
+      return if imported?
+
+      create_table unless table_created?
 
       columns      = schema.columns
       column_names = columns.map(&:name)

@@ -24,12 +24,12 @@ module InCSV
     def create(csv_file)
       database = Database.new(csv_file)
 
-      if database.exists? && !options.force?
+      if database.exists? && database.table_created? && !options.force?
         $stderr.puts "Database already exists."
         exit 41
       end
 
-      database.create
+      database.create_table
       puts "Database created successfully in #{database.db_path}"
     rescue StandardError => e
       $stderr.puts "Database failed to create."
@@ -59,7 +59,7 @@ module InCSV
     def console(csv_file)
       database = Database.new(csv_file)
 
-      unless database.created? && database.imported?
+      unless database.table_created? && database.imported?
         database.create
         database.import
       end

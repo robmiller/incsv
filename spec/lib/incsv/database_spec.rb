@@ -19,12 +19,12 @@ module InCSV
     describe "create" do
       it "creates the table" do
         database = Database.new(PRODUCTS)
-        expect(database.created?).to eq(false)
-        database.create
+        expect(database.table_created?).to eq(false)
+        database.create_table
         expect(database.db[:products].columns).to include(:name)
         expect(database.db[:products].columns).to include(:date_added)
         expect(database.db[:products].columns).to include(:price)
-        expect(database.created?).to eq(true)
+        expect(database.table_created?).to eq(true)
       end
     end
 
@@ -32,7 +32,7 @@ module InCSV
       it "imports the data" do
         database = Database.new(PRODUCTS)
         database.import
-        expect(database.created?).to eq(true)
+        expect(database.table_created?).to eq(true)
         expect(database.db[:products].count).to eq(515)
 
         first_product = database.db[:products].where(name: "Acid").first
@@ -61,7 +61,7 @@ module InCSV
 
         expect(database.exists?).to eq(false)
 
-        database.create
+        database.create_table
         expect(database.exists?).to eq(true)
       end
     end
