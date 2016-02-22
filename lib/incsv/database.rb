@@ -5,6 +5,7 @@ module InCSV
     def initialize(csv)
       @csv = csv
       @db = Sequel.sqlite(db_path)
+      @created = false
     end
 
     attr_reader :db
@@ -24,6 +25,12 @@ module InCSV
           add_column c.name, c.type.for_database
         end
       end
+
+      @created = true
+    end
+
+    def created?
+      @created
     end
 
     private

@@ -19,10 +19,12 @@ module InCSV
     describe "create" do
       it "creates the table" do
         database = Database.new(PRODUCTS)
+        expect(database.created?).to eq(false)
         database.create
         expect(database.db[:products].columns).to include(:name)
         expect(database.db[:products].columns).to include(:date_added)
         expect(database.db[:products].columns).to include(:price)
+        expect(database.created?).to eq(true)
       end
     end
   end
