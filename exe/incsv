@@ -8,6 +8,9 @@ require "pry"
 require "incsv"
 
 module InCSV
+  # A cut-down class, the binding of which is used for the REPL console.
+  # Any methods and instance variables defined here, therefore, are
+  # accessible from the console.
   class Console
     def initialize(db)
       @db = db
@@ -18,6 +21,7 @@ module InCSV
     end
   end
 
+  # The command-line interface to InCSV.
   class CLI < Thor
     desc "create CSV_FILE", "Creates a database file with the appropriate schema for the given CSV file, but doesn't import any data."
     method_option :force, type: :boolean, default: false

@@ -1,11 +1,15 @@
 require "csv"
 
 module InCSV
+  # Given a CSV file, samples data from it in order to establish what
+  # data types its columns are.
   class Schema
     def initialize(csv)
       @csv = csv
     end
 
+    # Returns the column types found in the CSV. Memoises the result, so
+    # can be called repeatedly.
     def columns
       @columns ||= parsed_columns
     end
@@ -14,6 +18,10 @@ module InCSV
 
     attr_reader :csv
 
+    # Returns an array with one element for each column in the CSV. The
+    # value is a Column object, which has responsibility for determining
+    # the type of the data stored in the column; a sample of 50 rows
+    # from the column is provided to the Column class for this purpose.
     def parsed_columns
       samples(50).map do |name, values|
         Column.new(name, values)

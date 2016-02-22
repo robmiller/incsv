@@ -7,8 +7,8 @@ It works by loading the CSV into an [SQLite][] database and then
 dropping you into an interactive Ruby shell. You can then use the
 [Sequel][] database library to perform further exploratory analysis.
 
-[sqlite]: https://www.sqlite.org/
-[sequel]: http://sequel.jeremyevans.net/
+[SQLite]: https://www.sqlite.org/
+[Sequel]: http://sequel.jeremyevans.net/
 
 ## Installation
 
@@ -38,7 +38,7 @@ A quick example:
 	  {:name=>"enhanced targeting card"},
 	  {:name=>"Giddyup Buttercup"}]
 
-[repl]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop
+[REPL]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop
 
 ### The less-quick version
 
