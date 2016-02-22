@@ -60,7 +60,7 @@ module InCSV
       database = Database.new(csv_file)
 
       unless database.table_created? && database.imported?
-        database.create
+        database.create_table
         database.import
       end
 
