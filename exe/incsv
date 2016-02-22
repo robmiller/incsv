@@ -1,0 +1,49 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+
+require "thor"
+
+require "incsv"
+
+module InCSV
+  class CLI < Thor
+    desc "create CSV_FILE", "Creates a database file with the appropriate schema for the given CSV file, but doesn't import any data."
+    method_option :force, type: :boolean, default: false
+    def create(csv_file)
+      database = Database.new(csv_file)
+
+      if database.exists? && !options.force?
+        $stderr.puts "Database already exists."
+        exit 41
+      end
+
+      database.create
+      puts "Database created successfully in #{database.db_path}"
+    rescue StandardError => e
+      $stderr.puts "Database failed to create."
+      $stderr.puts "#{e.message}"
+      exit 40
+    end
+
+    desc "import CSV_FILE", "Creates a database file with the appropriate schema for the given CSV file, and then imports the data within the file."
+
+    method_option :force, type: :boolean, default: false
+    def import(csv_file)
+      database = Database.new(csv_file)
+      create(csv_file)
+      database.import
+
+      puts "Data imported."
+      puts
+      puts "Command to query:"
+      puts "$ sqlite3 #{database.db_path}"
+    rescue StandardError => e
+      $stderr.puts "Import failed."
+      $stderr.puts "#{e.message}"
+      exit 50
+    end
+  end
+end
+
+InCSV::CLI.start
