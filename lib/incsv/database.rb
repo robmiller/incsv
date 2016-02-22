@@ -1,5 +1,7 @@
 require "sequel"
 
+require "pathname"
+
 module InCSV
   class Database
     def initialize(csv)
