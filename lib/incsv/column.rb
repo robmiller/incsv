@@ -2,63 +2,6 @@ require "bigdecimal"
 
 module InCSV
   class Column
-    class ColumnType
-      def self.name
-        self.to_s.sub(/.*::/, "").downcase.to_sym
-      end
-
-      def self.for_database
-        self.to_s.sub(/.*::/, "").downcase.to_sym
-      end
-
-      def initialize(value)
-        @value = value
-      end
-
-      def match?
-        false
-      end
-
-      def clean_value
-        @value
-      end
-
-      private
-      attr_reader :value
-    end
-
-    module Types
-      class Date < ColumnType
-        def match?
-          value.strip.match(/\A[0-9]{4}-[0-9]{2}-[0-9]{2}\z/)
-        end
-      end
-
-      class Currency < ColumnType
-        MATCH_EXPRESSION = /\A(\$|£)([0-9,\.]+)\z/
-
-        def self.for_database
-          "DECIMAL(10,2)"
-        end
-
-        def match?
-          value.strip.match(MATCH_EXPRESSION)
-        end
-
-        def clean_value
-          value.strip.match(MATCH_EXPRESSION) do |match|
-            BigDecimal(match[2].delete(","))
-          end
-        end
-      end
-
-      class String < ColumnType
-        def match?
-          true
-        end
-      end
-    end
-
     def initialize(name, values)
       @name = name
       @values = values
