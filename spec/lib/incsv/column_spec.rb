@@ -37,6 +37,10 @@ module InCSV
           expect(Types::String.new("foo").match?).to be_truthy
           expect(Types::String.new(nil).match?).to be_truthy
         end
+
+        it "stores data as a TEXT column in the database" do
+          expect(Types::String.for_database).to eq("TEXT")
+        end
       end
     end
 
@@ -83,6 +87,11 @@ module InCSV
 
       it "interprets unknown formats as strings" do
         column = Column.new("foo", ["foo", "bar"])
+        expect(column.type.name).to eq(:string)
+      end
+
+      it "interprets numbers as strings" do
+        column = Column.new("foo", ["775763369311", "775763362199", "640506331617", "640506331606"])
         expect(column.type.name).to eq(:string)
       end
     end
