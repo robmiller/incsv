@@ -6,6 +6,10 @@ module InCSV
     # therefore simple: it matches anything. For this reason it must be
     # matched last; this is achieved via require order.
     class String < ColumnType
+      def self.for_database
+        "TEXT"
+      end
+
       def match?
         true
       end
