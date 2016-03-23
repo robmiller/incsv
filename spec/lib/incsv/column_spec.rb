@@ -32,6 +32,16 @@ module InCSV
         end
       end
 
+      describe Types::Integer do
+        it "matches whole numbers" do
+          expect(Types::Integer.new("123456").match?).to be_truthy
+        end
+
+        it "doesn't match floating point numbers" do
+          expect(Types::Integer.new("1234.56").match?).to be_falsey
+        end
+      end
+
       describe Types::String do
         it "matches anything" do
           expect(Types::String.new("foo").match?).to be_truthy
@@ -90,9 +100,9 @@ module InCSV
         expect(column.type.name).to eq(:string)
       end
 
-      it "interprets numbers as strings" do
+      it "interprets numbers as integers" do
         column = Column.new("foo", ["775763369311", "775763362199", "640506331617", "640506331606"])
-        expect(column.type.name).to eq(:string)
+        expect(column.type.name).to eq(:integer)
       end
     end
   end
