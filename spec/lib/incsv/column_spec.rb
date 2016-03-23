@@ -42,6 +42,24 @@ module InCSV
         end
       end
 
+      describe Types::Decimal do
+        it "matches decimal numbers" do
+          expect(Types::Decimal.new("1234.56").match?).to be_truthy
+        end
+
+        it "also matches integers" do
+          expect(Types::Decimal.new("1234").match?).to be_truthy
+        end
+
+        it "stores values as fixed precision numbers in the database" do
+          expect(Types::Decimal.for_database).to match(/DECIMAL/)
+        end
+
+        it "converts numbers to BigDecimal format before storing them" do
+          expect(Types::Decimal.new("1234.56").clean_value).to eq(BigDecimal("1234.56"))
+        end
+      end
+
       describe Types::String do
         it "matches anything" do
           expect(Types::String.new("foo").match?).to be_truthy
