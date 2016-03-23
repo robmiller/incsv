@@ -64,8 +64,24 @@ module InCSV
       database = Database.new(csv_file)
 
       unless database.table_created? && database.imported?
+        pid = fork do
+          progress = Progress.new(output: $stdout, message: "Importing data...")
+
+          trap("TERM") do
+            progress.clear
+            exit
+          end
+
+          # No progress for files that import basically instantly
+          sleep 2
+
+          progress.indeterminate
+        end
+
         database.create_table
         database.import
+
+        Process.kill("TERM", pid)
       end
 
       console = Console.new(database.db)
