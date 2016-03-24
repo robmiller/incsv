@@ -1,12 +1,23 @@
 # incsv
 
 incsv is a tool for quickly interrogating CSV files using SQL and the
-Ruby programming language.
+Ruby programming language. It is, in essence, a [REPL][] for CSV files.
 
 It works by loading the CSV into an [SQLite][] database and then
 dropping you into an interactive Ruby shell. You can then use the
-[Sequel][] database library to perform further exploratory analysis.
+[Sequel][] database library, along with Ruby code, to perform further
+exploratory analysis.
 
+This makes it easy to perform the sorts of queries that are just too
+complex for Excel, or perform queries on much larger datasets than you
+ever could in a spreadsheet program.
+
+incsv has been tested on CSV files hundreds of megabytes in size; thanks
+to SQLite’s excellent performance, it holds up admirably even at these
+very large sizes, and there’s no reason why it couldn’t handle larger
+ones, too.
+
+[REPL]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop
 [SQLite]: https://www.sqlite.org/
 [Sequel]: http://sequel.jeremyevans.net/
 
@@ -37,8 +48,6 @@ A quick example:
 	  {:name=>"toy alien"},
 	  {:name=>"enhanced targeting card"},
 	  {:name=>"Giddyup Buttercup"}]
-
-[REPL]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop
 
 ### The less-quick version
 
